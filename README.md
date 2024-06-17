@@ -1,6 +1,6 @@
 # A Transformer-based Tabular Approach to Detect Toxic Comments
 
----
+
 ## Abstract
 <p align="justify"> In recent years, there has been a significant increase in toxic
 and hateful speech on social media platforms, becoming deeply entrenched
@@ -29,24 +29,15 @@ of the embedding generated, especially for social media platforms. </p>
 on Brazilian Portuguese comments. The approach utilizes the Tabular Deep Learning model FT-Transformer and various embedding models 
 to enhance the detection accuracy of toxic content. </p> --->
 ---
-## Requeriments
+## Unnamed 
 
-Make sure to use Python Python 3.10.12 and CUDA 
-<!---
-Cuda compilation tools, release 12.2, V12.2.140
-Build cuda_12.2.r12.2/compiler.33191640_0 --->
+> [!CAUTION]
+> Use Python 3.10.12 and CUDA 12.2.140.
 
-This work used Google Colab as an environment, mainly using the T4 free GPU tier.
+This work used Google Colab as a development environment, mainly using the T4 free GPU tier.
 <!--- Using a decent GPU is heavily encouraged. --->
 
-Install required Python dependencies.
-
-```bash
-!pip install -r requirements.txt
-```
-Optional python packages:
-
-Dataset
+### Data
 
 ToLD-Br dataset is available at [here](https://github.com/JAugusto97/ToLD-Br) and on [HuggingFace](https://huggingface.co/datasets/JAugusto97/told-br). 
 However, you can find the original ToLD-Br dataset files, splits, and our two-column (text,label) binary version [here](data/).
@@ -54,30 +45,23 @@ However, you can find the original ToLD-Br dataset files, splits, and our two-co
 <!--- Download and move to your current directory utils.py file --->
 
 ### Running the experiment
-<!---
-```python
-import foobar
 
-# returns 'words'
-foobar.pluralize('word')
+Install required Python dependencies.
 
-# returns 'geese'
-foobar.pluralize('goose')
+```bash
+!pip install -r requirements.txt
+```
 
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-``` --->
-
-To run the experiment use the Python Notebook available xxxxxx.
+To run the experiment use the Python Notebook available [here]().
 
 > [!IMPORTANT]
 > An API Key is required to reproduce results with **OpenAI** and **VoyageAI** Embedding Models (EM).
 
 > [!NOTE]
-> For the VoyageAI *voyage-large-2* embedding model processing the first 50MM tokens is free (including other EM);
-> <p align="justify"> To generate embeddings from OpenAI models it is imperative to ensure that your account has sufficient balance. Generating embeddings
-  through OpenAI's API incurs costs; therefore, verifying or adding funds to your account is necessary. This ensures uninterrupted access to the required
-  computational resources and facilitates smooth experimentation. </p>
+> - For the VoyageAI *voyage-large-2* embedding model processing the first 50MM tokens is free (including other EM);
+> - <p align="justify"> To generate embeddings from OpenAI models it is imperative to ensure that your account has sufficient balance. Generating embeddings
+> through OpenAI's API incurs costs; therefore, verifying or adding funds to your account is necessary. This ensures uninterrupted access to the required
+> computational resources and facilitates smooth experimentation. </p>
 
 > [!TIP]
 > Refer to [OpenAI API Pricing]([https://github.com/JAugusto97/ToLD-Br](https://openai.com/api/pricing/)) or [here](compute_gpt_costs.py) to calculate OpenAI Embedding Models usage costs based on the dataset size.
@@ -85,7 +69,7 @@ To run the experiment use the Python Notebook available xxxxxx.
 ## List of Embedding Models
 
 | Alias   | Model Name | Source | Language Support | Model Type | Output Dim |
-| :---          |:---           | :---            |        :---:         |     :---:      |          ---: |
+| :---          |:---           | :---            |:---             |:---           |:---       |
 | BERTimbau     | neuralmind/bert-large-portuguese-cased     | HuggingFace | Monolingual | BERT     | 1024    |
 | AlbertinaPTBR | PORTULAN/albertina-900m-portuguese-ptbr-encoder       | HuggingFace | Monolingual | BERT/DeBERTaV2      | 1536      |
 | SBERTimbau    | rufimelo/bert-large-portuguese-cased-sts       | HuggingFace | Monolingual | SBERT       | 1024      |
@@ -96,7 +80,14 @@ To run the experiment use the Python Notebook available xxxxxx.
 
 ## Steps
 
-![Alt text](FTT_approach.pdf)
+![Alt text](pipeline_abordagem_FTT_pages-to-jpg-0001.jpg)
+
+- **DATA PREPARATION**
+- **TEXT EMBEDDER**
+- **FT-TRANSFORMER**
+- **EVALUATION**
+- **PREDICTION**
+
 
 ## Results
 
@@ -117,9 +108,8 @@ To run the experiment use the Python Notebook available xxxxxx.
 ## How to cite
 
 
-
+<!---
 > [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
+> Urgent info that needs immediate user attention to avoid problems. --->
 
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
+
