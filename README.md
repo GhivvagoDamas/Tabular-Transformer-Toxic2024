@@ -59,9 +59,7 @@ To run the experiment use the Python Notebook available [here]().
 
 > [!NOTE]
 > - For the VoyageAI *voyage-large-2* embedding model processing the first 50MM tokens is free (including other EM);
-> - <p align="justify"> To generate embeddings from OpenAI models it is imperative to ensure that your account has sufficient balance. Generating embeddings
-> through OpenAI's API incurs costs; therefore, verifying or adding funds to your account is necessary. This ensures uninterrupted access to the required
-> computational resources and facilitates smooth experimentation. </p>
+> - <p align="justify"> To generate embeddings from OpenAI models it is imperative to ensure that your account has sufficient balance. Generating embeddings through OpenAI's API incurs costs; therefore, verifying or adding funds to your account is necessary. This ensures uninterrupted access to the required computational resources and facilitates smooth experimentation. </p>
 
 > [!TIP]
 > Refer to [OpenAI API Pricing]([https://github.com/JAugusto97/ToLD-Br](https://openai.com/api/pricing/)) or [here](compute_gpt_costs.py) to calculate OpenAI Embedding Models usage costs based on the dataset size.
