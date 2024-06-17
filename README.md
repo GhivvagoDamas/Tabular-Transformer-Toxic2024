@@ -39,7 +39,7 @@ This work used Google Colab as a development environment, mainly using the T4 fr
 
 ### Data
 
-ToLD-Br dataset is available at [here](https://github.com/JAugusto97/ToLD-Br) and on [HuggingFace](https://huggingface.co/datasets/JAugusto97/told-br). 
+ToLD-Br dataset is available at [here](https://github.com/JAugusto97/ToLD-Br) and on [HuggingFace](https://huggingface.co/datasets/JAugusto97/told-br). <br/>
 However, you can find the original ToLD-Br dataset files, splits, and our two-column (text,label) binary version [here](data/).
 
 <!--- Download and move to your current directory utils.py file --->
@@ -62,7 +62,7 @@ To run the experiment use the Python Notebook available [here]().
 > - <p align="justify"> To generate embeddings from OpenAI models it is imperative to ensure that your account has sufficient balance. Generating embeddings through OpenAI's API incurs costs; therefore, verifying or adding funds to your account is necessary. This ensures uninterrupted access to the required computational resources and facilitates smooth experimentation. </p>
 
 > [!TIP]
-> Refer to [OpenAI API Pricing](https://openai.com/api/pricing/) or [here](compute_gpt_costs.py) to calculate OpenAI Embedding Models usage costs based on the dataset size.
+> Refer to [OpenAI API Pricing](https://openai.com/api/pricing/) or [here](compute_gpt_costs.py) to calculate OpenAI usage costs based on the dataset size.
 
 ## List of Embedding Models
 
