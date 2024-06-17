@@ -78,7 +78,7 @@ To run the experiment use the Python Notebook available [here]().
 
 ## Proposed Method
 
-<img src="https://github.com/GhivvagoDamas/Tabular-Transformer-Toxic2024/blob/main/pipeline_abordagem_FTT_pages-to-jpg-0001.jpg" alt="A step-by-step process to detect toxic and hateful comments." width="250"/>
+<img src="https://github.com/GhivvagoDamas/Tabular-Transformer-Toxic2024/blob/main/pipeline_abordagem_FTT_pages-to-jpg-0001.jpg" alt="A step-by-step process to detect toxic and hateful comments." width="800"/>
 
 <br/>
 
