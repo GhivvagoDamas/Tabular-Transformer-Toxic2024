@@ -76,9 +76,11 @@ To run the experiment use the Python Notebook available [here]().
 | VoyageLarge2     | voyage-large-2      | Voyage AI | Multilingual | LLM Emb       | 1536      |
 | OpenAI-TE3-large     | text-embedding-3-large | OpenAI | Multilingual | LLM Emb       | 1536      |
 
-## Steps
+## Proposed Method
 
-![Alt text](pipeline_abordagem_FTT_pages-to-jpg-0001.jpg)
+<img src="https://github.com/GhivvagoDamas/Tabular-Transformer-Toxic2024/blob/main/pipeline_abordagem_FTT_pages-to-jpg-0001.jpg" alt="A step-by-step process to detect toxic and hateful comments." width="250"/>
+
+<br/>
 
 - **DATA PREPARATION**
 - **TEXT EMBEDDER**
@@ -91,13 +93,13 @@ To run the experiment use the Python Notebook available [here]().
 
 | Text Embedder | Test F1 (macro avg) | Test Acc | Precision | Recall |
 | :---          |     :---:      |     :---:     |     :---:      |          ---: |
-| BERTimbau     | 0.7316 | 0.7333 | BERT     | 1024    |
-| AlbertinaPTBR    | 0,7066 | 0.6906 | BERT/DeBERTaV2      | 1536      |
-| SBERTimbau    | 0.7317 | 0.7319 | LLM Emb       | 1536      |
-| ME5Large    | 0.7568 | 0.7580 | LLM Emb       | 1536      |
-| DeBERTaV2XL    | 0.6805 | 0.6814 | BERT/DeBERTaV2   | 1536      |
-| VoyageLarge2     | 0.7568 | 0.7580 | LLM Emb       | 1536      |
-| OpenAI-TE3-large     | 0.7568 | 0.7580 | LLM Emb       | 1536      |
+| BERTimbau     | 0.7316 | 0.7333 | 0.000    | 0.000     |
+| AlbertinaPTBR    | 0,7066 | 0.6906 | 0.000      | 0.000       |
+| SBERTimbau    | 0.7317 | 0.7319 | 0.000       | 0.000      |
+| ME5Large    | 0.7568 | 0.7580 | 0.000        | 0.000       |
+| DeBERTaV2XL    | 0.6805 | 0.6814 | 0.000    | 0.000       |
+| VoyageLarge2     | 0.7568 | 0.7580 | 0.000       | 0.000       |
+| OpenAI-TE3-large     | 0.7568 | 0.7580 | 0.000        | 0.000      |
 
 ## Conclusion
 
