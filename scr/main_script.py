@@ -1,8 +1,9 @@
 import torch
 import torch_frame
-import torch.nn as nn
 import pandas as pd
+import torch.nn as nn
 from openai import OpenAI
+import text_embedder as te
 import torch.optim as optim
 import torch.nn.functional as F
 
@@ -31,7 +32,7 @@ test_data = pd.read_csv('test_split.csv')
 
 # Set your Text Embedder
 em_model = 'chosen_model_name' # Example: em_model = 'rufimelo/bert-large-portuguese-cased-sts'
-text_encoder = text_embedder.SentenceTransformerTextEncoder(model, device)
+text_encoder = te.SentenceTransformerTextEncoder(model, device)
 
 text_embedder_cfg = TextEmbedderConfig(text_embedder=text_encoder, batch_size=text_encoder.text_embedder_batch_size)
 
