@@ -6,6 +6,7 @@ from openai import OpenAI
 import text_embedder as te
 import torch.optim as optim
 import torch.nn.functional as F
+import fttransformermodel as ftt
 
 from tqdm import tqdm
 from typing import List
@@ -73,7 +74,7 @@ parser = {
 }
 
 # Create and Compile FTT model
-ftt_model = FTTransformerModel(parser)
+ftt_model = ftt.FTTransformerModel(parser)
 
 ftt_model = torch.compile(ftt_model, dynamic=True) if args.compile else ftt_model
 
