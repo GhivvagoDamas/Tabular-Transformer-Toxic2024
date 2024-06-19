@@ -16,7 +16,7 @@ comments on social media in Brazilian Portuguese. An important aspect of
 this research involves using language models and modern embedding models 
 as language embedders, and evaluating their performance with the FT-Transformer,
 a transformer-based tabular model. The experimental scenario uses
-a binary version of the ToLD-Br dataset. The model achieved a 75% accuracy
+a binary version of the ToLD-Br dataset. The model achieved a 76% accuracy
 rate and a 75% macro F1-score using the OpenAI text-embedding-3-large model.
 While this approach showed strong performance, further improvements can be
 achieved by incorporating additional features and methods to enhance the quality
@@ -28,8 +28,7 @@ of the embedding generated, especially for social media platforms. </p>
 <!--- <p align="justify"> This repository contains the code and resources for detecting toxic and hateful speech on social media, focusing 
 on Brazilian Portuguese comments. The approach utilizes the Tabular Deep Learning model FT-Transformer and various embedding models 
 to enhance the detection accuracy of toxic content. </p> --->
----
-## Unnamed 
+--- 
 
 > [!CAUTION]
 > Use Python 3.10.12 and CUDA 12.2.140.
@@ -44,18 +43,17 @@ However, you can find the original ToLD-Br dataset files, splits, and our two-co
 
 <!--- Download and move to your current directory utils.py file --->
 
-### Running the experiment
-
-Install required Python dependencies.
-
-```bash
-!pip install -r requirements.txt
-```
-
-To run the experiment use the Python Notebook available [here]().
+### How to reproduce the experiments:
 
 > [!IMPORTANT]
 > An API Key is required to reproduce results with **OpenAI** and **VoyageAI** Embedding Models (EM).
+
+To reproduce the experiments on Google Colab use the notebook file [FT-Transformer Binary Text Classifier](scr/FT_Transformer_Binary_Text_Classifier.ipynb).
+
+To use in conda or other environments copy the whole project and install the required dependencies.
+```bash
+!pip install -r requirements.txt
+```
 
 > [!NOTE]
 > - For the VoyageAI *voyage-large-2* embedding model processing the first 50MM tokens is free (including other EM);
@@ -76,30 +74,17 @@ To run the experiment use the Python Notebook available [here]().
 | VoyageLarge2     | voyage-large-2      | Voyage AI | Multilingual | LLM Emb       | 1536      |
 | OpenAI-TE3-large     | text-embedding-3-large | OpenAI | Multilingual | LLM Emb       | 1536      |
 
-## Proposed Method
-
-<img src="https://github.com/GhivvagoDamas/Tabular-Transformer-Toxic2024/blob/main/pipeline_abordagem_FTT_pages-to-jpg-0001.jpg" alt="A step-by-step process to detect toxic and hateful comments." width="800"/>
-
-<br/>
-
-- **DATA PREPARATION**
-- **TEXT EMBEDDER**
-- **FT-TRANSFORMER**
-- **EVALUATION**
-- **PREDICTION**
-
-
 ## Results
 
-| Text Embedder | Test F1 (macro avg) | Test Acc | Precision | Recall |
-| :---          |     :---:      |     :---:     |     :---:      |          ---: |
-| BERTimbau     | 0.7316 | 0.7333 | 0.000    | 0.000     |
-| AlbertinaPTBR    | 0,7066 | 0.6906 | 0.000      | 0.000       |
-| SBERTimbau    | 0.7317 | 0.7319 | 0.000       | 0.000      |
-| ME5Large    | 0.7568 | 0.7580 | 0.000        | 0.000       |
-| DeBERTaV2XL    | 0.6805 | 0.6814 | 0.000    | 0.000       |
-| VoyageLarge2     | 0.7568 | 0.7580 | 0.000       | 0.000       |
-| OpenAI-TE3-large     | 0.7568 | 0.7580 | 0.000        | 0.000      |
+| Text Embedder | Test F1 (macro avg) | Test Acc | 
+| :---          |     :---:      |     :---:     |   
+| BERTimbau     | 0.7316 | 0.7333 | 
+| AlbertinaPTBR    | 0,7066 | 0.6906 | 
+| SBERTimbau    | 0.7317 | 0.7319 | 
+| ME5Large    | 0.7568 | 0.7580 | 
+| DeBERTaV2XL    | 0.6805 | 0.6814 | 
+| VoyageLarge2     | 0.7568 | 0.7580 | 
+| OpenAI-TE3-large     | 0.7568 | 0.7643 | 
 
 ## Conclusion
 
