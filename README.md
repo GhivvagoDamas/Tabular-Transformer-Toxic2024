@@ -47,10 +47,13 @@ However, you can find the original ToLD-Br dataset files, splits, and our two-co
 
 > [!IMPORTANT]
 > An API Key is required to reproduce results with **OpenAI** and **VoyageAI** Embedding Models (EM).
-
-To reproduce the experiments on Google Colab use the notebook file [FT-Transformer Binary Text Classifier](scr/FT_Transformer_Binary_Text_Classifier.ipynb).
-
 <br/>
+
+To reproduce the experiments on Google Colab, use the FT-Transformer Binary Text Classifier [notebook](scr/FT_Transformer_Binary_Text_Classifier.ipynb) and the indicated requirements file to install the dependencies.
+
+```bash
+!pip install -r requirements_colab.txt
+```
 <br/>
 
 For conda-like environments copy the whole project and install the required dependencies.
