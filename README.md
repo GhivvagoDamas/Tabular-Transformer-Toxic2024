@@ -50,7 +50,10 @@ However, you can find the original ToLD-Br dataset files, splits, and our two-co
 
 To reproduce the experiments on Google Colab use the notebook file [FT-Transformer Binary Text Classifier](scr/FT_Transformer_Binary_Text_Classifier.ipynb).
 
-To use in conda or other environments copy the whole project and install the required dependencies.
+<br/>
+<br/>
+
+For conda-like environments copy the whole project and install the required dependencies.
 ```bash
 !pip install -r requirements.txt
 ```
