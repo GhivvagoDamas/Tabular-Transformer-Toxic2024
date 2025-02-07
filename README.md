@@ -97,7 +97,17 @@ For conda-like environments copy the whole project and install the required depe
 ## Acknowledgments
 
 ## How to cite
+If you use this work, please cite:
 
+```bibtex
+@inproceedings{damas2024transformer,
+  title={A Transformer-Based Tabular Approach to Detect Toxic Comments},
+  author={Damas, Ghivvago and Torres Anchi{\^e}ta, Rafael and Santos Moura, Raimundo and Ponte Machado, Vinicius},
+  booktitle={Brazilian Conference on Intelligent Systems},
+  pages={18--30},
+  year={2024},
+  organization={Springer}
+}
 
 <!---
 > [!WARNING]
