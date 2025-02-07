@@ -114,7 +114,8 @@ For conda-like environments copy the whole project and install the required depe
 - Enhancing performance via **contextual features, Contrastive Learning, and RAG**.
   
 ## 🏆 Recognition & Acknowledgments
-This paper was a **Best Paper Nominee** at the **34th Brazilian Conference on Intelligent Systems (BRACIS 2024)** 🎉. 
+This paper was a **Best Paper Nominee** at the **34th Brazilian Conference on Intelligent Systems (BRACIS 2024)** 🎉, and
+can be found at [Intelligent Systems (BRACIS 2024) | A Transformer-Based Tabular Approach to Detect Toxic Comments](https://link.springer.com/chapter/10.1007/978-3-031-79038-6_2).
 
 I am deeply grateful for the support and collaboration of my research colleagues and my master's advisors.  
 Your guidance, insights, and dedication were instrumental in shaping the depth and quality of this research, 
