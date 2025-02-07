@@ -92,9 +92,36 @@ For conda-like environments copy the whole project and install the required depe
 | VoyageLarge2     | 0.7568 | 0.7580 | 
 | OpenAI-TE3-large     | 0.7568 | 0.7643 | 
 
-## Conclusion
+## Conclusion Key Points 
+### **Novel Approach for Binary Text Classification**  
+- Tailored for structured tabular data.  
+- Achieves **76% accuracy** and **75% F1-score** using **OpenAI text-embedding-3-large**.  
+- Effectively detects **hate speech and toxicity** without **fine-tuning** or **transfer learning**.  
 
-## Acknowledgments
+### **Dataset Review (ToLD-Br)**  
+- **Concerns** about validity and reliability.  
+- Issues with **imbalance in annotator agreement** due to **bias, term resignification, and stylistic slur usage**.  
+
+### **Tabular Deep Learning (TDL) Models**  
+- **FT-Transformer** excels in multimodal and structured data learning.  
+- **Minimal computational resources** required beyond GPU usage.  
+- Highlights the **importance of TDL and Embedding Models** in toxicity detection.  
+
+### **Future Work**  
+- **Exploring advanced embedding models**: **BGE M3 (FlagEmbeddings), SBERT**.  
+- **Adapting LLMs** (e.g., **Sabiá, Aya**) into **robust embedding models**.  
+- Investigating **bias detection & mitigation**.  
+- Enhancing performance via **contextual features, Contrastive Learning, and RAG**.
+  
+## 🏆 Recognition & Acknowledgments
+This paper was a **Best Paper Nominee** at the **34th Brazilian Conference on Intelligent Systems (BRACIS 2024)** 🎉. 
+
+I am deeply grateful for the support and collaboration of my research colleagues and my master's advisors.  
+Your guidance, insights, and dedication were instrumental in shaping the depth and quality of this research, 
+leading to a publication that truly reflects our hard work and commitment to excellence. 
+
+I sincerely appreciate you being incredible research partners, sharing your knowledge and expertise,
+and helping me improve my writing and research skills.    
 
 ## How to cite
 If you use this work, please cite:
@@ -109,8 +136,5 @@ If you use this work, please cite:
   organization={Springer}
 }
 
-<!---
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems. --->
 
 
